@@ -1,0 +1,8 @@
+<svg width="27.688" height="23.843" fill="none" version="1.1" viewBox="0 0 27.688 23.843" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="26.688" height="100%" />
+    </clipPath>
+  </defs>
+ <path d="m1.1876 1.3274s6.286 13.171 11.384 17.438c5.0978 4.2672 14.616 4.5622 14.616 4.5622v-15.539s-2.0513 2.0824-10.505 0c-8.4539-2.0824-15.495-6.4614-15.495-6.4614z" fill="#fff" stroke="#dfdfdf" clip-path="url(#clip)" />
+</svg>
