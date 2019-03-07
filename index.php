@@ -1,4 +1,4 @@
-﻿<?php	include "header.php";?>		
+﻿<?php	include "header.php";?>
 	<main>
 		<div class="top-block">
 		  <div class="wrapper">
@@ -10,8 +10,8 @@
         <div class="top-block__media">
           <img src="img/laptop.png" alt="">
           <a href="https://www.youtube.com/embed/WsQwyQnpimM" target="_blank" data-fancybox class="btn btn_video top-block__btn">Видео о компании</a>
-        </div>        
-      </div>        
+        </div>
+      </div>
 		</div>
     <div class="problem">
       <div class="wrapper">
@@ -152,5 +152,281 @@
         </div>
       </div>
     </div>
+    <div class="reviews">
+      <div class="wrapper">
+        <h2>Отзывы <strong>наших клиентов</strong></h2>
+        <div class="reviews__slider">
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+        </div>
+        <div class="reviews__pic">
+          <div class="reviews__person"><img src="img/persons/3.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/5.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/3.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/5.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/4.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/3.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/5.png" alt=""></div>
+          <div class="reviews__person"><img src="img/persons/4.png" alt=""></div>
+        </div>
+        <p>Компании остаются с нами даже после <br>смены руководства</p>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="wrapper">
+        <h2>Вы сами выбираете <strong>стоимость аренды 1С в облаке</strong></h2>
+        <p>В кратком описании — самое важное. Чтобы увидеть подробности, <br>нажмите «Полные условия тарифа»</p>
+        <div class="box catalog__box">
+          <div class="card level-1">
+            <h3>Бизнес. Старт</h3>
+            <div class="card__price"><strong>1700</strong> руб./мес.</div>
+            <div class="card__descr">Отличный старт</div>
+            <ul>
+              <li>2 пользователя</li>
+              <li>5 гб дискового пространства</li>
+              <li>Доступ через браузер <br>или тонкий клиент</li>
+              <li>Ежедневное резервное <br>копирование</li>
+              <li>Автоматические обновления</li>
+            </ul>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>1 конфигурация на выбор</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list icon-list_blank">
+                  <li>1С:Бухгалтерия 8 ПРОФ</li>
+                  <li>1С:Бухгалтерия 8 КОРП</li>
+                  <li>1C:Розница 8</li>
+                  <li>1C:Управление торговлей 8</li>
+                  <li>1С:Управление нашей фирмой</li>
+                  <li>1С:Зарплата и Управление Персоналом 8</li>
+                  <li>1С:Договоры 8</li>
+                  <li>1С:Зарплата и Управление Персоналом 8 КОРП</li>
+                  <li>1С:Предприятие 8. Бухгалтерия сельскохозяйственного предприятия</li>
+                  <li>1С:Учет в управляющих компаниях ЖКХ, ТСЖ и ЖСК</li>
+                </ul>
+                <div class="card__message">Интересуют другие конфигурации — обратитесь к менеджеру</div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>Сервисы</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list">
+                  <li>1С-Отчетность</li>
+                  <li>1С:Контрагент</li>
+                  <li>1CПАРК Риски</li>
+                  <li>1С:Подпись</li>
+                  <li>1С-ЭДО</li>
+                  <li>Информационная система «1С:ИТС»</li>
+                  <li>1C:Номенклатура</li>
+                  <li>1С:Бизнес-сеть.Торговая площадка</li>
+                  <li>1С:Сверка</li>
+                  <li>1С:ДиректБанк</li>
+                </ul>
+                <div class="card__message">Все сервисы уже включены в стоимость</div>
+              </div>
+            </div>
+            <a href="#" class="btn btn_block card__btn" data-modal="tariff">Начать бесплатно</a>
+            <a href="#">Полные условия тарифа</a>
+          </div>
+          <div class="card level-2">
+            <h3>Стандарт</h3>
+            <div class="card__price"><strong>1000</strong> руб./мес.</div>
+            <div class="card__descr">Хит продаж</div>
+            <ul>
+              <li>1 пользователь</li>
+              <li>5 гб дискового пространства</li>
+              <li>Публикация приложения</li>
+              <li>Ежедневное резервное <br>копирование</li>
+              <li>Автоматические обновления</li>
+              <li>Доступ к конфигуратору</li>
+            </ul>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>7 конфигураций включены</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list">
+                  <li>1С:Бухгалтерия 8 ПРОФ</li>
+                  <li>1С:Бухгалтерия 8 КОРП</li>
+                  <li>1C:Розница 8</li>
+                  <li>1C:Управление торговлей 8</li>
+                  <li>1С:Управление нашей фирмой</li>
+                  <li>1С:Зарплата и Управление Персоналом 8</li>
+                  <li>1С:Комплексная автоматизация</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>Дополнительные сервисы</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list icon-list_dash">
+                  <li>1С-Отчетность</li>
+                  <li>1С:Контрагент</li>
+                  <li>1CПАРК Риски</li>
+                  <li>1С:Подпись</li>
+                  <li>1С-ЭДО</li>
+                  <li>Информационная система «1С:ИТС»</li>
+                  <li>1C:Номенклатура</li>
+                  <li>1С:Бизнес-сеть.Торговая площадка</li>
+                  <li>1С:Сверка</li>
+                  <li>1С:ДиректБанк</li>
+                </ul>
+                <div class="card__message">Стоимость подключения уточните у менеджера</div>
+              </div>
+            </div>
+            <a href="#" class="btn btn_block card__btn" data-modal="tariff">Начать бесплатно</a>
+            <a href="#">Полные условия тарифа</a>
+          </div>
+          <div class="card level-3">
+            <h3>Персональный</h3>
+            <div class="card__price"><strong>6000</strong> руб./мес.</div>
+            <div class="card__descr">Выделенный сервер</div>
+            <ul>
+              <li>5 пользователей</li>
+              <li>25 гб дискового пространства</li>
+              <li>Полноценный рабочий стол</li>
+              <li>Ежедневное резервное <br>копирование</li>
+              <li>Автоматические обновления</li>
+              <li>Доступ к конфигуратору</li>
+              <li>Установка ПО заказчика</li>
+            </ul>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>7 конфигураций включены</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list">
+                  <li>1С:Бухгалтерия 8 ПРОФ</li>
+                  <li>1С:Бухгалтерия 8 КОРП</li>
+                  <li>1C:Розница 8</li>
+                  <li>1C:Управление торговлей 8</li>
+                  <li>1С:Управление нашей фирмой</li>
+                  <li>1С:Зарплата и Управление Персоналом 8</li>
+                  <li>1С:Комплексная автоматизация</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link"><span>Дополнительные сервисы</span></a>
+              <div class="dropdown__content">
+                <ul class="icon-list icon-list_dash">
+                  <li>1С-Отчетность</li>
+                  <li>1С:Контрагент</li>
+                  <li>1CПАРК Риски</li>
+                  <li>1С:Подпись</li>
+                  <li>1С-ЭДО</li>
+                  <li>Информационная система «1С:ИТС»</li>
+                  <li>1C:Номенклатура</li>
+                  <li>1С:Бизнес-сеть.Торговая площадка</li>
+                  <li>1С:Сверка</li>
+                  <li>1С:ДиректБанк</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="btn btn_block card__btn" data-modal="tariff">Начать бесплатно</a>
+            <a href="#">Полные условия тарифа</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calc">
+      <div class="wrapper">
+        <img src="img/tablet.png" alt="">
+        <div class="calc__inner">
+          <h3>Сравните стоимость покупки собственных серверов и лицензий с ежемесячной стоимостью аренды 1С в облаке</h3>
+          <p>Чтобы получить расчет, введите вашу электронную почту. Маленький спойлер: 1С в облаке сэкономит вам более 400 тысяч рублей!</p>
+          <form action="#as">
+            <input type="email" placeholder="Email">
+            <button class="btn btn_small">Отправить</button>
+          </form>
+          <pre>Отправляя форму вы соглашаетесь с политикой <br>конфиденциальности</pre>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="wrapper">
+        <h2>Как мы обеспечиваем сохранность информации <br>и <strong>бесперебойную работу вашей 1С в облаке?</strong></h2>
+        <p>Мы в компании «Облачные технологии» даем финансовую <br>гарантию работы 1С в облаке и сохранности вашей информации.</p>
+        <div class="box info__box">
+          <div class="info__item">
+            <img src="img/lock.png" alt="">
+            <h3>Постоянная защита</h3>
+            <p>Защита от взлома, кражи, копирования <br>информации, шифровальщиков и других <br>вредоносных программ</p>
+          </div>
+          <div class="info__item">
+            <img src="img/backup.png" alt="">
+            <h3>Ежедневное резервное <br>копирование ваших баз</h3>
+            <p>Чтобы вы могли при необходимости восстановить любую версию базы, система каждый день автоматически производит резервное копирование данных.</p>
+          </div>
+          <div class="info__item">
+            <img src="img/modem.png" alt="">
+            <h3>Независимость <br>от физических поломок</h3>
+            <p>Благодаря системе виртуализации, если что-то выходит из строя, функции передаются следующему оборудованию
+            <span class="hidden-text">
+              <span class="hidden-text__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eligendi, corporis, provident cupiditate eum labore excepturi nulla eveniet saepe quasi consequuntur dolorum reiciendis a. Minima nemo obcaecati minus tenetur sit.</span>
+              <a href="#"></a>
+            </span>
+            </p>
+          </div>
+          <div class="info__item">
+            <img src="img/gear.png" alt="">
+            <h3>Подтвержденная надежность оборудования</h3>
+            <p>Серверы расположены в одном из крупнейших в России центров обработки данных – DataPro. Его высокий уровень надежности подтверждают международные сертификаты
+              <span class="hidden-text">
+                <span class="hidden-text__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, eligendi, corporis, provident cupiditate eum labore excepturi nulla eveniet saepe quasi consequuntur dolorum reiciendis a. Minima nemo obcaecati minus tenetur sit.</span>
+                <a href="#"></a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="wrapper">
+        <div class="order__inner">
+          <h2>Попробуйте 1С в облаке сейчас <br>и получите первый <strong>месяц работы в подарок!</strong></h2>
+          <p>Вы также можете сэкономить до 50%, оплатив выбранный тариф на 12 месяцев. <br>Начните работать через час после заявки. Персональный менеджер поможет по всем вопросам.</p>
+          <form action="">
+            <input type="text" placeholder="Ваше имя">
+            <input type="email" placeholder="Email">
+            <button class="btn">Отправить заявку</button>
+          </form>
+          <pre>Отправляя форму вы соглашаетесь с политикой конфиденциальности</pre>
+        </div>
+      </div>
+    </div>
 	</main>
-<?php	include "footer.php";?>	
+<?php	include "footer.php";?>

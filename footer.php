@@ -1,5 +1,7 @@
-	<footer>
-		
+	<footer class="footer">
+		<div class="wrapper footer__wrapper">
+      
+    </div>
 	</footer>
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>

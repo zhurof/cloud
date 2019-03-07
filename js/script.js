@@ -3,3 +3,21 @@
   $(this).toggleClass('active');
   $(this).siblings('.dropdown__content').slideToggle(200);
 })
+$('.hidden-text>a').click(function(e){
+  e.preventDefault();
+  $(this).toggleClass('active');
+  $(this).siblings('.hidden-text__content').toggleClass('open');
+})
+$('.reviews__slider').slick({
+  arrows:false,
+  asNavFor:'.reviews__pic'
+})
+$('.reviews__pic').slick({
+  //slidesToShow:5,
+  arrows:false,
+  variableWidth:true,
+  centerMode:true,
+  centerPadding:0,
+  focusOnSelect:true,
+  asNavFor:'.reviews__slider'
+})
