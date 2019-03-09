@@ -185,7 +185,9 @@
     padding:30px 0;
     min-height:0;
     &__pic{
-      display:none;
+      position:relative;
+      right:auto;
+      top:auto;
     }
     &__text{
       max-width:100%;
@@ -325,6 +327,9 @@
     }
     &__text{
       margin:0 0 30px;
+      .btn{
+        width:354.44px;
+      }
     }
     &__media{
       width:auto;
@@ -337,6 +342,21 @@
       top:auto;
       left:auto;
       color:inherit;
+    }
+  }
+  .problem{
+    &__pic{
+      width:380px;
+      max-width:100%;
+      padding:0 20px 0 0;
+      margin:auto;
+    }
+    &__tooltip{
+      padding:24px 43px; 
+      font-size:12px;
+      width:280px;
+      right:0;
+      top:-10px;
     }
   }
   .advantages{
@@ -443,6 +463,21 @@
   }
   .top-block{
     padding:100px 0 0;
+    &__text{
+      .btn{
+        width:auto;
+      }
+    }
+  }
+  .problem{
+    &__pic{
+      padding:0;
+    }
+    &__tooltip{
+      font-size:9px;
+      width:220px;
+      padding:20px 30px;
+    }
   }
   .about{
     br{
