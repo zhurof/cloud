@@ -1,11 +1,37 @@
-﻿<?php	include "header.php";?>
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Верстка</title>
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no" />	
+	<link rel="stylesheet" href="css/fonts.css" />	
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper header__wrapper">
+      <a href="#/" class="logo header__logo"></a>
+      <ul class="header__menu">
+        <li><a href="#guarantees">Ваши гарантии</a></li>
+        <li><a href="#catalog">Тарифы</a></li>
+        <li><a href="#calc">Сравнить решения</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+      </ul>
+      <button class="btn btn_thin header__btn" data-modal="callback">Заказать звонок</button>
+    </div>
+	</header>
+<!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
+<!--[if lt IE 10]><script>location.href='/old-ie.html';</script><![endif]-->
 	<main>
 		<div class="top-block">
 		  <div class="wrapper">
         <div class="top-block__text">
           <h1><strong>Аренда 1С в облаке: занимайтесь бизнесом,</strong> а не решением технических вопросов</h1>
           <h3>Бесплатный перенос базы и месяц <br>на тестирование сервиса в подарок</h3>
-          <button class="btn">Оставить заявку</button>
+          <button class="btn" data-modal="test">Оставить заявку</button>
         </div>
         <div class="top-block__media">
           <img src="img/laptop.png" alt="">
@@ -85,7 +111,7 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="guarantees">
       <div class="wrapper">
         <h2><strong>Надежность работы</strong> важна <br>на каждом этапе развития бизнеса</h2>
         <div class="about__contnent">
@@ -148,11 +174,11 @@
           </div>
         </div>
         <div class="scheme__footer">
-          <a href="#/" class="btn btn_stroke scheme__btn">попробовать бесплатно</a>
+          <a href="#/" class="btn btn_stroke scheme__btn" data-modal="test">попробовать бесплатно</a>
         </div>
       </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
       <div class="wrapper">
         <h2>Отзывы <strong>наших клиентов</strong></h2>
         <div class="reviews__slider">
@@ -210,7 +236,7 @@
         <p>Компании остаются с нами даже после <br>смены руководства</p>
       </div>
     </div>
-    <div class="catalog">
+    <div class="catalog" id="catalog">
       <div class="wrapper">
         <h2>Вы сами выбираете <strong>стоимость аренды 1С в облаке</strong></h2>
         <p>В кратком описании — самое важное. Чтобы увидеть подробности, <br>нажмите «Полные условия тарифа»</p>
@@ -362,7 +388,7 @@
         </div>
       </div>
     </div>
-    <div class="calc">
+    <div class="calc" id="calc">
       <div class="wrapper">
         <img src="img/tablet.png" alt="">
         <div class="calc__inner">
@@ -429,4 +455,141 @@
       </div>
     </div>
 	</main>
-<?php	include "footer.php";?>
+  <footer class="footer">
+		<div class="wrapper footer__wrapper">
+      <div class="footer__main">
+        <a href="#/" class="logo logo_white footer__logo"></a>
+        <p><strong>Юридический адрес</strong></p>
+        <p>109156, Москва, улица Авиаконструктора Миля, дом 3, помещение 1, комната 5</p>
+        <p><strong>Офис</strong></p>
+        <p>125009, Москва, Бизнес-центр Берта Хаус, Старопименовский пер., 18</p>
+      </div>
+      <div class="footer__nav">
+        <p>Нужны дополнительные услуги? Закажите вместе с арендой 1С</p>
+        <ul>
+          <li><a href="#">Программы и лицензии</a></li>
+          <li><a href="#">Телефония для сайта</a></li>
+          <li><a href="#">Бухгалтерский аудит и сопровождение</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <p>Контактные телефоны</p>
+        <div class="footer__phone"><a href="tel: +74957778358">+7 495 777 83 58</a></div>
+        <div class="footer__phone"><a href="tel: +78007757562">+7 800 775 75 62</a> <small>(бесплатно по РФ)</small></div>
+        <a href="#">Пользовательское соглашение</a><br>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+	</footer>
+  <div class="modal" id="callback">
+    <span class="modal__close">✕</span>
+    <div class="callback">
+      <h2>Оперативно ответим <br><strong>на вопросы</strong></h2>
+      <form action="#/">
+        <input type="tel" placeholder="Телефон" />
+        <button class="btn btn_block btn_color btn_blue">Перезвоните мне!</button>
+      </form>
+      <pre>Отправляя форму вы соглашаетесь с политикой конфиденциальности</pre>
+      <div class="callback__social">
+        <a href="#/" class="btn btn_block btn_color btn_whatsapp">Написать в whatsapp</a>
+        <a href="#/" class="btn btn_block btn_color btn_telegram">Написать в telegram</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal_big" id="tariff">
+    <span class="modal__close">✕</span>
+    <form action="#/" class="tariff">
+      <div class="tariff__chars">
+        <div class="tariff__char">
+          <h3>Выберите конфигурации:</h3>
+          <label><input type="checkbox"><span>1С:Бухгалтерия 8 ПРОФ</span></label>
+          <label><input type="checkbox"><span>1С:Бухгалтерия 8 КОРП</span></label>
+          <label><input type="checkbox"><span>1C:Розница 8</span></label>
+          <label><input type="checkbox"><span>1C:Управление торговлей 8</span></label>
+          <label><input type="checkbox"><span>1С:Управление нашей фирмой</span></label>
+          <label><input type="checkbox"><span>1С:Зарплата и Управление Персоналом 8</span></label>
+          <label><input type="checkbox"><span>1С:Комплексная автоматизация</span></label>
+        </div>
+        <div class="tariff__char">
+          <h3>Дополнительные пользователи:</h3>
+          <p>1 пользователь включен в тариф <br><small>Дополнетельно — 1200 руб/мес за 1 пользователя</small></p>
+          <div class="range">
+            <input type="text" class="range__output" readonly>
+            <div class="range__bar"></div>
+            <input type="range" class="range__input" min="1" max="20" step="1" value="5" />
+          </div>
+        </div>
+        <div class="tariff__char">
+          <h3>Дополнительные сервисы:</h3>          
+          <label><input type="checkbox"><span>1С-Отчетность <small>(1000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С:Контрагент <small>(1200 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1CПАРК Риски <small>(5000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С:Подпись <small>(3000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С-ЭДО <small>(2000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>Информационная система «1С:ИТС» <small>(12000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1C:Номенклатура <small>(7000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С:Бизнес-сеть.Торговая площадка <small>(50000 руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С:Сверка <small>(1000 0руб./год)</small></span></label>
+          <label><input type="checkbox"><span>1С:ДиректБанк <small>(30000 руб./год)</small></span></label>
+        </div>  
+      </div>
+      <div class="tariff__main">
+        <h2>Тариф <strong>«Стандарт»</strong></h2>
+        <div class="tariff__price"><strong>1000</strong> руб./мес.</div>
+        <p>Попробуйте 14 дней бесплатно</p>
+        <input type="text" placeholder="ФИО">
+        <input type="email" placeholder="Эл. почта">
+        <input type="tel" placeholder="Телефон">
+        <button class="btn btn_block">Отправить</button>
+        <pre>Отправляя форму вы соглашаетесь с политикой конфиденциальности</pre>
+      </div>
+    </form>
+  </div>
+  <div class="modal modal_medium" id="test">
+    <span class="modal__close">✕</span>
+    <div class="test">
+      <div class="test__main">
+        <div class="test__head">Пройдите короткий тест для того, чтобы узнать стоимость аренды 1С и получите первый месяц использования в подарок.</div>
+        <div class="test__body">
+          <div class="test__form">
+            <div class="test__question">
+              <h2>Сейчас ведется учет в какой-либо базе 1С?</h2>
+              <div class="test__bar"><div></div></div>
+              <label><input type="radio" name="ans[0]" value="Да, у нас есть база, которую мы хотим передать в  облако" required /><span>Да, у нас есть база, которую мы хотим передать в  облако</span></label>
+              <label><input type="radio" name="ans[0]" value="Да, но нам нужна новая база" required /><span>Да, но нам нужна новая база</span></label>
+              <label><input type="radio" name="ans[0]" value="Нет, не ведется" required /><span>Нет, не ведется</span></label>
+            </div>
+            <div class="test__question">
+              <h2>Далеко, далеко на лугу пасутся ко...</h2>
+              <div class="test__bar"><div></div></div>
+              <label><input type="radio" name="ans[1]" value="Кони" required /><span>Кони</span></label>
+              <label><input type="radio" name="ans[1]" value="Козы" required /><span>Козы</span></label>
+              <label><input type="radio" name="ans[1]" value="Коровы" required /><span>Коровы</span></label>
+            </div>
+            <div class="test__question">
+              <h2>По полям, по полям...</h2>
+              <div class="test__bar"><div></div></div>
+              <label><input type="radio" name="ans[2]" value="синий трактор едет к нам" required /><span>синий трактор едет к нам</span></label>
+              <label><input type="radio" name="ans[2]" value="красный трактор едет к нам" required /><span>красный трактор едет к нам</span></label>
+              <label><input type="radio" name="ans[2]" value="красный трактор уезжает прочь из этой страны" required /><span>красный трактор уезжает прочь из этой страны</span></label>
+            </div>
+          </div>
+          <div class="test__nav">          
+            <button type="button" class="btn btn_color btn_blue test__prev disabled">← Назад</button>
+            <button type="button" class="btn btn_color btn_blue test__next">Далее →</button>
+          </div>
+        </div>
+      </div>
+      <div class="test__info">
+        <p>Ваш бонус:</p>
+        <div class="test__bonus">10 бесплатных дней</div>
+        <p>Вы получаете 5 бесплатных дней работы 1С за каждый ответ</p>
+      </div>
+    </div>
+  </div>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="js/script.js"></script>	
+</body>
+</html>
