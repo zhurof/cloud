@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Верстка</title>
 	<meta name="viewport" content="width=device-width, shrink-to-fit=no" />	
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<link rel="stylesheet" href="css/fonts.css" />	
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<link rel="stylesheet" href="libs/slick/slick.css" />
@@ -21,6 +22,7 @@
         <li><a href="#reviews">Отзывы</a></li>
       </ul>
       <button class="btn btn_thin header__btn" data-modal="callback">Заказать звонок</button>
+      <span class="menu-btn"></span>
     </div>
 	</header>
 <!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
@@ -183,7 +185,15 @@
         <h2>Отзывы <strong>наших клиентов</strong></h2>
         <div class="reviews__slider">
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="1" data-modal="review">Читать полностью</a></p>
+            <!--
+              Для модального окна есть события "beforeShow" и "afterShow", которые передают в функцию-обработчик параметры "e" и "initiator", где "e" - объект события, а "initiator"  - элемент с которого вызвано окно. Т.е. можно при запуске модального окна подтягивать ajax-ом полный текст отзыва. В script.js есть пример с выводом data-id в консоль. Ну или наплодить десяток окон с id-шниками типа review1,review2 и т.п.
+            -->
+            <h3>Елена Перминова</h3>
+            <small>ООО «Деловые линии»</small>
+          </div>
+          <div class="reviews__item">
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="2" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
@@ -193,32 +203,27 @@
             <small>ООО «Деловые линии»</small>
           </div>
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="4" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="5" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="6" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="7" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
           <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
-            <h3>Елена Перминова</h3>
-            <small>ООО «Деловые линии»</small>
-          </div>
-          <div class="reviews__item">
-            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="3" data-modal="review">Читать полностью</a></p>
+            <p>По дороге встретил текст рукопись. Она предупредила его: «В моей стране все перепи- сывается по несколько раз. Единственное, что от меня осталось, это приставка «и». <a href="#" data-id="8" data-modal="review">Читать полностью</a></p>
             <h3>Елена Перминова</h3>
             <small>ООО «Деловые линии»</small>
           </div>
@@ -582,10 +587,17 @@
       </div>
       <div class="test__info">
         <p>Ваш бонус:</p>
-        <div class="test__bonus">10 бесплатных дней</div>
+        <div class="test__bonus"><span>0</span> бесплатных дней</div>
         <p>Вы получаете 5 бесплатных дней работы 1С за каждый ответ</p>
       </div>
     </div>
+  </div>
+  <div class="modal modal_simple" id="review">
+    <span class="modal__close">✕</span>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, inventore?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, magnam, est, eius quia assumenda porro reprehenderit quos sint eaque natus eligendi similique animi ut sapiente eum consequatur odit. Animi, aspernatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, rem, nemo sed perferendis officia facere quia ipsam commodi culpa sit.</p>
   </div>
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>

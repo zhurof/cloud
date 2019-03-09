@@ -29,13 +29,519 @@
 	.wrapper{
 		max-width:992px;
 	}
+  .top-block{
+    padding:150px 0 30px;
+    &__text{
+      max-width:50%;
+    }
+    &__media{
+      width:660px;
+      left:~"calc(50% - 20px)";
+    }
+    &__btn{
+      top: 140px;
+      left: 140px;
+    }
+  }
+  .problem{
+    &__text{
+      max-width:500px;
+    }
+  }
+  .advantages{
+    &__item{
+      width:290px;
+      min-height:260px;
+      padding:24px;
+      h3{
+        font-size:16px;
+      }
+    }
+    .dropdown{
+      &__content{
+        margin:1em -24px;
+      }
+    }
+  }
+  .offer{
+    &__item{
+      width:245px;
+      padding:0 0 0 44px;
+    }
+  }
+  .scheme{
+    &__item{
+      width:290px;
+      font-size:16px;
+    }
+  }
+  .card{
+    width:290px;
+    padding:109px 15px 57px;
+    &__descr{
+      margin:0 -15px 15px;
+      padding:3px 15px 6px;
+    }
+    .dropdown{
+      &__content{
+        margin:0 -15px;
+        padding:25px 10px;
+      }
+    }
+    &__btn{
+      font-size:18px;
+    }
+  }
+  .calc{
+    &__inner{
+      padding:68px 30px 75px 400px;
+    }
+  }
+  .order{
+    &__inner{
+      padding:55px;
+    }
+    input{
+      width:240px;
+    }
+  }
+  .footer{
+    &__main{
+      width:320px;
+    }
+    &__nav{
+      margin:0 20px;
+    }
+    &__contacts{
+      margin:0 0 0 15px;
+    }
+  }
 }
 @media(max-width:991px){
-	
+  body{
+    background:none;
+  }
+  .menu-btn{
+    display:inline-block;
+    font-size:24px;
+    width:1em;
+    text-align:center;
+    cursor:pointer;
+    font-family:fontAwesome;
+    margin:0 0 0 15px;
+    &:before{
+      content:'\f0c9';      
+    }
+    &.active:before{
+      content:'\f00d';
+    }
+  }
+	.header{
+    padding:5px 0 10px;
+    &__logo{
+      width:148px;
+      margin:0 auto 0 0;
+    }
+    &__menu{
+      position:absolute;
+      background-color:@teal;
+      width:320px;
+      max-width:100%;
+      padding:1em;
+      color:#fff;
+      right:0;
+      top:100%;
+      text-align:right;
+      transform:scaleY(0);
+      pointer-events:none;
+      font-size:20px;
+      transition:all .2s ease;
+      transform-origin:center top;
+      &.open{
+        pointer-events:all;
+        transform:scaleY(1);
+      }
+      >li{
+        display:block;
+        margin:0;
+      }
+    }
+  }
+  .top-block{
+    padding:120px 0 0;
+    &__text{
+      max-width:100%;
+      margin:0 0 40px;
+    }
+    &__media{
+      position:relative;
+      top:auto;
+      left:auto;
+      max-width:100%;
+      margin:0 auto;
+    }
+  }
+  .problem{
+    padding:30px 0;
+    min-height:0;
+    &__pic{
+      display:none;
+    }
+    &__text{
+      max-width:100%;
+    }
+  }
+  .about{
+    padding:30px 0;
+  }
+  .person{
+    padding:0;
+    &__body{
+      margin:25px 0 0 25px;
+      padding:20px;
+      ul{
+        font-size:inherit;
+      }
+    }    
+  }
+  .offer{
+    display:block;
+    &__item{
+      width:auto;
+      margin:0 0 1em;
+      &:not(:last-child){
+        border-right:0;
+      }
+    }
+  }
+  .catalog{
+    &:before{
+      display:none;
+    }
+  }
+  .calc{
+    min-height:0;
+    img{
+      display:none;
+    }
+    &__inner{
+      padding:30px;
+      border-radius:30px;
+    }
+    form{
+      margin:32px auto 23px;
+    }
+    pre{
+      margin:0 auto;
+    }
+  }
+  .info{
+    &__box{
+      display:block;
+      margin:0;
+    }
+    &__item{
+      width:auto;
+      max-width:100%;
+    }
+  }
+  .order{
+    background:none;
+    br{
+      display:none;
+    }
+    &__inner{
+      padding:30px;
+      border-radius:30px;
+    }
+    form{
+      display:block;
+      width:320px;
+      max-width:100%;
+      margin:20px auto;
+    }
+    input{
+      display:block;
+      width:100%;
+      margin:0 0 12px;
+    }
+  }
+  .test{
+    display:block;
+    &__main{
+      width:auto;
+    }
+    &__head{
+      padding:20px 40px 10px 25px;
+    }
+    &__body{
+      padding:30px 25px;
+    }
+    &__form{
+      min-height:0;
+    }
+    &__nav{
+      padding:0;
+    }
+    &__info{
+      padding:20px 25px;
+      border-radius:0 0 20px 20px;
+      width:auto;
+      display:block;
+    }
+    &__bonus{
+      max-width:230px;
+      margin:0 auto 1em;
+    }
+  }
+  .tariff{
+    &__chars{
+      padding:50px 20px 120px;
+    }
+    &__main{
+      width:390px;
+      padding:50px 20px;
+    }
+  }
 }
 @media(max-width:767px){
-	
+  h1{
+    font-size:28px;
+    margin:0 0 1em;
+  }
+  h2{
+    font-size:24px;
+  }
+  h3{
+    font-size:18px;
+  }
+	.top-block{
+    text-align:center;
+    min-height:0;
+    /*url(../img/bg/blot12.svg) no-repeat -90px -97px,url(../img/bg/dots1.svg) no-repeat 15px 42%*/
+    background-position: -90px -97px, -100% 0;
+    br{
+      display:none;
+    }
+    &__text{
+      margin:0 0 30px;
+    }
+    &__media{
+      width:auto;
+      img{
+        display:none;
+      }
+    }
+    &__btn{
+      position:relative;
+      top:auto;
+      left:auto;
+      color:inherit;
+    }
+  }
+  .advantages{
+    padding:25px 0;
+    br{
+      display:none;
+    }
+  }
+  .person{
+    display:block;
+    &__head{
+      margin:0 auto 1em;
+    }
+    &__body{
+      width:100%;
+      margin:0;
+      border-radius:15px;
+      &:before{
+        display:none;
+      }
+    }
+  }
+  .reviews{
+    &__pic{
+      max-width:300px;
+    }
+  }
+  .footer{
+    background-image:none;
+    padding:25px 0;
+    font-size:14px;
+    &__wrapper{
+      display:block;
+    }
+    &__main,
+    &__contacts{
+      width:auto;
+      margin:0 0 10px;
+      padding:0;
+    }
+    &__main{
+      margin:0 0 1.5em;
+    }
+    &__nav{
+      display:none;
+    }
+  }
+  .tariff{
+    display:block;
+    &__chars{
+      display:none;
+    }
+    &__main{
+      width:auto;
+      border-radius:20px;
+    }
+  }
 }
 @media(max-width:480px){
-	
+  h1{
+    font-size:22px;
+  }
+  h2{
+    font-size:20px;
+  }
+  h3{
+    font-size:inherit;
+  }
+  [type=text],
+  [type=email],
+  [type=tel],
+  [type=password],
+  [type=url],
+  textarea{
+    font-size:16px;
+    padding:1em;
+  }
+	.btn{
+    font-size:16px;
+    line-height:3;
+    padding:0 30px;
+    &_video{
+      padding:0 53px 0 25px;
+      &:after{
+        width:25px;
+        height:25px;
+        line-height:25px;
+        font-size:11px;
+        box-shadow:none;
+      }
+    }
+    &_stroke{
+      font-size:14px;
+      box-shadow:0 0 0 10px #fff;
+    }
+  }
+  .modal{
+    border-radius:10px;
+  }
+  .header{
+    &__btn{
+      display:none;
+    }
+  }
+  .top-block{
+    padding:100px 0 0;
+  }
+  .about{
+    br{
+      display:none;
+    }
+  }
+  .reviews{
+    font-size:inherit;
+    br{
+      display:none;
+    }
+    &__item{
+      padding:40px 15px 15px;
+      border-radius:10px;
+    }
+  }
+  .calc{
+    &__inner{
+      border-width:2px;
+      padding:15px;
+      border-radius:10px;
+    }
+    h3{
+      font-size:inherit;
+    }
+    form{
+      input{
+        padding:1em;
+        margin:0 0 10px;
+      }
+      .btn{
+        position:static;
+        display:block;
+        width:100%;
+      }
+    }
+  }
+  .info{
+    &__box{
+      padding:0;
+    }
+    &__item{
+      padding:0;
+      text-align:center;
+      img{
+        position:static;
+        display:block;
+        margin:0 auto 10px;
+      }
+      br{
+        display:none;
+      }
+    }
+  }
+  .order{
+    &__inner{
+      border-radius:10px;
+      border-width:2px;
+      padding:15px;
+    }
+  }
+  .test{
+    &__head{
+      font-size:12px;
+    }
+    &__info{
+      border-radius:0 0 10px 10px;
+    }
+    &__nav{
+      display:block;
+    }
+    &__prev,
+    &__next{
+      display:block;
+      width:100%;
+    }
+    &__prev{
+      margin:0 0 12px;
+    }
+  }
+  .callback{
+    padding:40px 20px 20px;
+    form{
+      padding:0 0 20px;
+      margin:0 0 20px;
+    }
+    &__social{
+      .btn{
+        font-size:14px;
+      }
+    }
+  }
+}
+@media(max-width:329px){
+  .reviews{
+    &__pic{
+      width:auto;
+      max-width:1000%;
+      margin:0 -15px;
+    }
+  }
 }

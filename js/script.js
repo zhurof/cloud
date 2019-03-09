@@ -7,6 +7,10 @@ function headerStatus(){
   }
 }
 $(window).on('load scroll',headerStatus);
+$('.menu-btn').click(function(){
+  $(this).toggleClass('active');
+  $('.header__menu').toggleClass('open');
+})
 //Плавная прокрутка ссылкам меню
 $('.header__menu a[href^="#"]').click(function(e){
 	e.preventDefault();
@@ -15,6 +19,8 @@ $('.header__menu a[href^="#"]').click(function(e){
 		$('html, body').animate({
       scrollTop: $(hash).offset().top - $('header').outerHeight()
     }, 400);
+    $('.menu-btn').removeClass('active');
+    $('.header__menu').removeClass('open');
     return false;
 	}
 })
@@ -87,9 +93,16 @@ function setRangeValue(){
 }
 $('.range__input').each(setRangeValue);
 $('.range__input').on('input change',setRangeValue);
+
+//Отзывное модальное окно
+$('#review').on('beforeShow',function(e,initiator){
+  var revID = $(initiator).data('id');
+  console.log(revID);
+})
 //Слайдеры
 $('.reviews__slider').slick({
   arrows:false,
+  adaptiveHeight:true,
   asNavFor:'.reviews__pic'
 })
 $('.reviews__pic').slick({
@@ -162,4 +175,12 @@ $('.test__next').click(function(){
     //если невалидных нет, мотаем на следующий слайд
     slider.slick('slickNext') ;
   }  
+})
+//бонусные дни
+var daysPerAnswer = 5;
+
+$('.test__question input').change(function(){
+  var answers = $('.test__question input:checked').length;
+  
+  $('.test__bonus span').text(answers*daysPerAnswer);
 })
